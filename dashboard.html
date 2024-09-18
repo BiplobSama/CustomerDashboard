@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet'  href='dashboard.css'>
+</head>
+<body>
+  <section class="customer-dashboard">
+    <header class="top-bar">
+      <div class="logo" aria-hidden="true"></div>
+      <h1 class="dashboard-title">Customer Dashboard</h1>
+      <nav class="navigation">
+        <a href="#" class="nav-tab">Profile</a>
+        <a href="#" class="nav-tab">View Bookings</a>
+        <a href="#" class="nav-tab">Leave Reviews</a>
+        <a href="#" class="nav-tab">Report Issues</a>
+        <a href="#" class="nav-tab">Logout</a>
+      </nav>
+    </header>
+  
+    <section class="hero-section">
+      <div class="user-avatar" aria-hidden="true"></div>
+      <div class="user-info">
+        <h2 class="user-name">Customer Name</h2>
+        <div class="membership-status">
+          <span class="status-label">Gold Member</span>
+        </div>
+        <p class="user-description">Manage your profile, bookings, and leave reviews here</p>
+      </div>
+      <div class="action-buttons">
+        <button class="secondary-btn">View Bookings</button>
+        <button class="primary-btn">Update Profile</button>
+      </div>
+      <img src="hero-background.jpg" alt="" class="hero-bg" aria-hidden="true">
+    </section>
+  
+    <section class="bookings-section">
+      <div class="bookings-info">
+        <h2 class="bookings-title">Upcoming Bookings</h2>
+        <p class="bookings-description">View and manage your upcoming bookings</p>
+        <div class="booking-actions">
+          <button class="cancel-booking-btn">Cancel Booking</button>
+          <button class="view-details-btn">View Details</button>
+        </div>
+      </div>
+      <ul class="bookings-list">
+        <li class="booking-item">
+          <span class="booking-icon" aria-hidden="true">📅</span>
+          <div class="booking-details">
+            <h3 class="provider-name">Service Provider Name</h3>
+            <time class="booking-date">Date & Time</time>
+          </div>
+          <span class="booking-status">Status: Upcoming</span>
+          <img src="booking-divider.jpg" alt="" class="booking-divider" aria-hidden="true">
+        </li>
+        <li class="booking-item">
+          <span class="booking-icon" aria-hidden="true">📅</span>
+          <div class="booking-details">
+            <h3 class="provider-name">Service Provider Name</h3>
+            <time class="booking-date">Date & Time</time>
+          </div>
+          <span class="booking-status">Status: Upcoming</span>
+          <img src="booking-divider.jpg" alt="" class="booking-divider" aria-hidden="true">
+        </li>
+      </ul>
+    </section>
+  
+    <section class="reviews-section">
+      <div class="reviews-info">
+        <h2 class="reviews-title">Your Reviews</h2>
+        <p class="reviews-description">View and manage your reviews</p>
+        <button class="write-review-btn primary-btn">Write Review</button>
+      </div>
+      <ul class="reviews-list">
+        <li class="review-card">
+          <div class="reviewer-info">
+            <div class="reviewer-avatar" aria-hidden="true"></div>
+            <span class="reviewer-name">Service Provider A</span>
+            <img src="rating-stars.jpg" alt="5 star rating" class="review-rating">
+          </div>
+          <p class="review-text">Great service, highly recommended</p>
+        </li>
+        <li class="review-card">
+          <div class="reviewer-info">
+            <div class="reviewer-avatar" aria-hidden="true"></div>
+            <span class="reviewer-name">Service Provider B</span>
+            <img src="rating-stars.jpg" alt="5 star rating" class="review-rating">
+          </div>
+          <p class="review-text">Excellent experience, will book again</p>
+        </li>
+      </ul>
+    </section>
+  
+    <section class="report-section">
+      <div class="report-info">
+        <h2 class="report-title">Report an Issue</h2>
+        <p class="report-description">Let us know about any problems you encountered</p>
+      </div>
+      <form class="report-form">
+        <div class="form-group">
+          <div class="form-input">
+            <label for="provider-name" class="input-label">Service Provider Name</label>
+            <input type="text" id="provider-name" class="input-field" placeholder="Enter provider name">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-input">
+            <label for="issue-description" class="input-label">Issue Description</label>
+            <textarea id="issue-description" class="input-field" placeholder="Describe the issue"></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="cancel-btn">Cancel</button>
+          <button type="submit" class="submit-btn">Submit Report</button>
+        </div>
+      </form>
+      <img src="report-background.jpg" alt="" class="report-bg" aria-hidden="true">
+    </section>
+  
+    <footer class="footer">
+      <div class="footer-content">
+        © 2023 Customer Dashboard. All Rights Reserved.
+      </div>
+    </footer>
+  </section>
+</body>
+</html>
